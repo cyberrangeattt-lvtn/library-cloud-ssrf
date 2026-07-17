@@ -11,3 +11,7 @@
   src: https://github.com/cyberrangecz/ansible-role-sandbox-logging.git
   scm: git
   version: v1.0.0
+- name: chrony
+  src: https://github.com/cyberrangecz/ansible-role-chrony.git
+  scm: git
+  version: 1.0.1

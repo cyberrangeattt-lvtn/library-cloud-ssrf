@@ -14,7 +14,7 @@
   hosts: hosts
   become: true
   roles:
-    - hosts
+    - role: hosts
 
 - name: Configure trainee workstation
   hosts: attacker
@@ -24,25 +24,26 @@
       user_access_username: user
       user_access_password: Password123
       user_access_sudo: true
-    - attacker
+    - role: attacker
+    - role: chrony
 
 - name: Configure vulnerable ImageResizer and mock IMDS
   hosts: webapp-vm
   become: true
   roles:
-    - webapp
+    - role: webapp
 
 - name: Configure Docker host and portainer-lite container
   hosts: docker-host
   become: true
   roles:
-    - docker-host
+    - role: docker-host
 
 - name: Configure MinIO object storage
   hosts: minio-storage
   become: true
   roles:
-    - minio-storage
+    - role: minio-storage
 
 - name: Configure command logging
   hosts: hosts
