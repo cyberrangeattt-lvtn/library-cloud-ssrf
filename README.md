@@ -6,10 +6,10 @@ A linear CyberRangeCZ lab implementing the chain:
 
 | Host | IP | Purpose |
 |---|---:|---|
-| kali-attacker | 172.20.0.5 | trainee workstation |
-| webapp-vm | 172.20.0.10 | ImageResizer and mock IMDS |
-| docker-host | 172.20.0.20 | portainer-lite and Docker 24.0.5 |
-| minio-storage | 172.20.0.30 | S3-compatible storage |
+| attacker | 172.20.1.5 | trainee workstation |
+| webapp-vm | 172.20.1.10 | ImageResizer and mock IMDS |
+| docker-host | 172.20.1.20 | portainer-lite and Docker 24.0.5 |
+| minio-storage | 172.20.1.30 | S3-compatible storage |
 
 Trainee account: `user` / `Password123`.
 
